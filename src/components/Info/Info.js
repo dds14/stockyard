@@ -10,19 +10,19 @@ export default class Info extends React.Component {
     constructor(props) {
       super(props);
       this.state = { 
-        randomId: 0
+        randomId: 1
       };
   
       this.randomize = this.randomize.bind(this);
 
     }
 
+    /* This is just a function that generates a random number.
+    It is then used to choose a random ID from the list of stocks. */
     randomize() {
-      var randomStock = data[Math.floor(Math.random()*data.length - 1)];
+      var randomStock = data[Math.floor(Math.random()*(data.length - 2))];
       let finalRandom = randomStock.id;
-      // alert(finalRandom);
       this.setState({ randomId: finalRandom })
-      // alert(this.state.randomId)
   }
 
     render () {
@@ -43,10 +43,6 @@ export default class Info extends React.Component {
             <p class ="yearly-low"> {"52-Week Low: " + data[this.state.randomId].yearlyLow} </p>
         </aside>
       </div>
-
-
-
-
       <Randomize randomize={this.randomize} />
       </main>
       )}

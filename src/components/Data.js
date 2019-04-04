@@ -1,5 +1,15 @@
 export const data = [
     {
+        id: 0,
+        companyName: "Tilray, Inc.",
+        companyLogo: 'https://static1.squarespace.com/static/55b92d64e4b0cb5b793c8f4e/t/55faefd4e4b00683790dd44f/1442508758839/Leafly+Logo.png',
+        ticker: "TLRY",
+        marketCap: "5.91B",
+        industry: "Cannabis",
+        yearlyHigh: "$300.00",
+        yearlyLow: "$20.10"
+    },
+    {
         id: 1,
         companyName: "Tesla, Inc.",
         companyLogo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Tesla_T_symbol.svg/771px-Tesla_T_symbol.svg.png',
@@ -248,6 +258,6 @@ export const data = [
         industry: "Software",
         yearlyHigh: "$166.99",
         yearlyLow: "$113.60"
-    },
+    }
 ]
 
