@@ -1,0 +1,25 @@
+.financials {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+.financials {
+    display: flex;
+    width: 800px;
+    justify-content: space-between;
+}
+
+.main-left {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    justify-content: space-between;
+}
+
+.main-right {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    justify-content: space-between;
+}
