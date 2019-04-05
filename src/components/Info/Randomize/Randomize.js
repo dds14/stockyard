@@ -4,11 +4,6 @@ import React from 'react'
 import './Randomize.css';
 
 
-
-
-
-
-
 export default function Randomize(props) {
       return <div class='randomize-div'>
         <button onClick={props.randomize} class="randomize-button">

@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Info from './components/Info/Info.js'
 import Financials from './components/Financials/Financials'
-// import Randomize from './components/Randomize/Randomize'
+import FavoriteButtons from './components/Info/AddToFavorites/FavoriteButtons';
 
 class App extends Component {
   // constructor(props) {
@@ -19,9 +19,9 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <p>
-            {/* <Randomize /> */}
             <Info />
             <Financials />
+            <FavoriteButtons />
           </p>
   
         </header>

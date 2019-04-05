@@ -1,0 +1,38 @@
+.addtofavs-div {
+    position:absolute; 
+    top:0; 
+    right:0;
+    margin-right: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.addtofavs-button {
+    border-radius: 45px;
+    background-color: red;
+    color: black;
+    font-size: 16px;
+    margin-top: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 25px;
+    padding-left: 25px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.viewfavs-button {
+    border-radius: 45px;
+    background-color: red;
+    color: black;
+    font-size: 16px;
+    margin-top: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 25px;
+    padding-left: 25px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
