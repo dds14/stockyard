@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 // import logo from './logo.svg';
-import './App.css';
-import Info from './components/Info/Info.js'
-import Financials from './components/Financials/Financials'
-import FavoriteButtons from './components/Info/AddToFavorites/FavoriteButtons';
+import "./App.css";
+import Info from "./components/Info/Info.js";
+import Financials from "./components/Financials/Financials";
+import FavoriteButtons from "./components/Info/AddToFavorites/FavoriteButtons";
 
 class App extends Component {
   // constructor(props) {
@@ -13,6 +13,11 @@ class App extends Component {
   //   }
   // }
 
+  // do the conditional rendering here
+  // make a function that sets state when clicking
+  // the 'view favorites' button'
+  // if the state is clicked, dislay the favorites
+  // component, else display the info and financials components
 
   render() {
     return (
@@ -21,9 +26,8 @@ class App extends Component {
           <p>
             <Info />
             <Financials />
-            <FavoriteButtons />
+            {/* <FavoriteButtons /> */}
           </p>
-  
         </header>
       </div>
     );

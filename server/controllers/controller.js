@@ -23,12 +23,12 @@
 //     }
 // }
 
-let favorites = []
+let favorites = [];
 
 module.exports = {
-    addToFavorites: (req, res) => {
-        let favorite = req.body.name;
-        favorites.push(req.body.name, req.body.logo, req.body.ticker)
-        res.status(200).json(favorites)
-    }
-}
+  addToFavorites: (req, res) => {
+    console.log(req.body);
+    favorites.push(req.body.name, req.body.logo, req.body.ticker);
+    res.status(200).json(favorites);
+  }
+};
