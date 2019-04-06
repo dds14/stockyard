@@ -78,7 +78,7 @@ export default class Info extends React.Component {
             </p>
           </aside>
         </div>
-        <Randomize randomize={this.randomize} />
+        {/* <Randomize randomize={this.randomize} /> */}
         <FavoriteButtons addToFavorites={this.addToFavorites} />
       </main>
     );
