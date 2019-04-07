@@ -33,18 +33,20 @@ class App extends Component {
           <p>
             <button
               className="view-favorites"
-              onClick={() => this.showFavorites("Clicked")}
+              onClick={() => this.showFavorites("Yes")}
             >
               Show My Favorites
             </button>
+
             {this.state.favs === "No" ? (
               <div>
-                NOOOOOO
-                {/* <Randomize randomize={this.randomize} /> */}
-                {/* <Info /> */}
+                <Info />
+                <Randomize randomize={this.randomize} />
               </div>
+            ) : this.state.favs === "Yes" ? (
+              <ViewFavorites />
             ) : (
-              this.state.favs === "Clicked"(<p>YESSSSSSSSSS</p>)
+              <p>This is an error</p>
             )}
           </p>
         </header>
