@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom";
+// import ReactDOM from "react-dom";
 import axios from "axios";
 
 import { data } from "../Data.js";
@@ -78,7 +78,7 @@ export default class Info extends React.Component {
             </p>
           </aside>
         </div>
-        {/* <Randomize randomize={this.randomize} /> */}
+        <Randomize randomize={this.randomize} />
         <FavoriteButtons addToFavorites={this.addToFavorites} />
       </main>
     );

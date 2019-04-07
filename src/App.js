@@ -41,7 +41,7 @@ class App extends Component {
             {this.state.favs === "No" ? (
               <div>
                 <Info />
-                <Randomize randomize={this.randomize} />
+                {/* <Randomize randomize={this.randomize} /> */}
               </div>
             ) : this.state.favs === "Yes" ? (
               <ViewFavorites />

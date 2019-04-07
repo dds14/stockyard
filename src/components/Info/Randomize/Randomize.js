@@ -12,3 +12,7 @@ export default function Randomize(props) {
     </div>
   );
 }
+
+{
+  /* <button onClick={props.randomize} class="randomize-button"> */
+}
