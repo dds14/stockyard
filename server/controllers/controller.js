@@ -1,13 +1,21 @@
-// change this, using template from node-day-2-mini
-// check out node-day-2-afternoon, it has the best info
-// node-day-2 is alright
-
 let favorites = [];
 
-module.exports = {
-  addToFavorites: (req, res) => {
-    console.log(favorites);
-    favorites.push(req.body.name, req.body.logo, req.body.ticker);
-    res.status(200).json(favorites);
-  }
+// READ
+const readFavorites = (req, res) => {
+  res.status(200).json(favorites);
+}
+
+// CREATE
+const addToFavorites = (req, res) => {
+  favorites.push({
+    name: req.body.name,
+    logo: req.body.logo,
+    ticker: req.body.ticker
+  });
+  res.status(200).json(favorites);
 };
+
+module.exports = {
+  addToFavorites,
+  readFavorites
+}

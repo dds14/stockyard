@@ -34,9 +34,11 @@ export default class Info extends React.Component {
       ticker: data[this.state.randomId].ticker
     };
     axios.post("/api/favorites", favorites).then(response => {
-      console.log(favorites);
+      console.log(response.data);
     });
+
   }
+
 
   render() {
     return (
