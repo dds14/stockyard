@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import axios from "axios";
+import "./viewfavorites.css";
 
 
 
@@ -26,11 +27,12 @@ export default class ViewFavorites extends React.Component {
   render() {
     return (
       this.state.favorites.map(favorite => (
-        <div>
-          {favorite.name}
-          <img src={favorite.logo}>
+        <div class='favorites-div'>
+          <h2 class='favorites-name'>{favorite.name}</h2>
+          <p class="favorites-ticker">{favorite.ticker}</p>
+          <img class="favorites-image" src={favorite.logo}>
           </img>
-          {favorite.ticker}
+          <hr class="favorites-seperator" align="center" width="100%" />
         </div>
       ))
     )

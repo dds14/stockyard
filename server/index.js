@@ -12,6 +12,8 @@ app.get("/api/favorites", controller.readFavorites);
 // CREATE
 app.post("/api/favorites", addToFavorites);
 
+// UPDATE
+
 
 const PORT = 4041;
 app.listen(PORT, () => {

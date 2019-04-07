@@ -1,0 +1,25 @@
+.favorites-div {
+    display: flex;
+    flex-direction: column;
+    padding-top: 35px;
+}
+
+.favorites-image {
+    width: 200px;
+    height: 200px;
+    padding-bottom: 30px;   
+    margin: auto;
+
+}
+
+.favorites-name {
+    padding-bottom: 30px;
+}
+
+.favorites-ticker {
+    padding-bottom: 30px;    
+}
+
+.favorites-seperator {
+    margin-bottom: 30px;
+}
