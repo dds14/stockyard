@@ -6,7 +6,7 @@ let favorites = [];
 
 module.exports = {
   addToFavorites: (req, res) => {
-    console.log(req.body);
+    console.log(favorites);
     favorites.push(req.body.name, req.body.logo, req.body.ticker);
     res.status(200).json(favorites);
   }
