@@ -24,3 +24,8 @@
     background-color: #ffcdd2;
     color: rgb(181, 47, 47);
 }
+
+.randomize-button:focus {
+    outline:none;
+}
+

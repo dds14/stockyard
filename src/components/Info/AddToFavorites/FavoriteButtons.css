@@ -30,6 +30,10 @@
   color: rgb(181, 47, 47);
 }
 
+.addtofavs-button:focus {
+  outline:none;
+}
+
 .viewfavs-button {
   border-radius: 45px;
   background-color: rgb(181, 47, 47);

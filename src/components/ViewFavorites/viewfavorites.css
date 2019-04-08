@@ -42,7 +42,7 @@
         font-family: "Roboto", sans-serif;
         text-transform: uppercase;
         letter-spacing: 4px;
-        width: 100%;
+        width: 25vw;
         margin: auto;
       
 }
@@ -50,4 +50,8 @@
 .remove-button:hover {
     background-color: #ffcdd2;
     color: rgb(181, 47, 47);
+}
+
+.remove-button:focus {
+    outline:none;
 }

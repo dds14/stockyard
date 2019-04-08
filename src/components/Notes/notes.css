@@ -56,6 +56,10 @@
     color: rgb(181, 47, 47);
 }
 
+.notes-button:focus {
+    outline:none;
+}
+
 .notes-input {
     margin-top: 20px;
     padding-top: 20px;
@@ -64,15 +68,12 @@
     font-weight: 500;
     font-size: 14px;
     border: 2px solid rgb(181, 47, 47);
-    /* background-color: white; */
     background-color: #ffcdd2;
-    /* box-shadow: 3px 3px 5px #ffcdd2; */
 }
 
 .notes-input:focus {
     outline:none;
     background-color: white;
-    /* background-color: #ffcdd2; */
     box-shadow: 3px 3px 5px #ffcdd2;
 
 }

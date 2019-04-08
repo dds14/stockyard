@@ -44,3 +44,7 @@
   background-color: #ffcdd2;
   color: rgb(181, 47, 47);
 }
+
+.view-favorites:focus {
+  outline:none;
+}
