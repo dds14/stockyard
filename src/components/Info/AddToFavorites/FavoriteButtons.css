@@ -12,8 +12,8 @@
 
 .addtofavs-button {
   border-radius: 45px;
-  background-color: red;
-  color: black;
+  background-color: rgb(181, 47, 47);
+  color: white;
   font-size: 16px;
   margin-top: 30px;
   padding-top: 15px;
@@ -27,7 +27,7 @@
 
 .viewfavs-button {
   border-radius: 45px;
-  background-color: red;
+  background-color: rgb(181, 47, 47);
   color: black;
   font-size: 16px;
   margin-top: 30px;

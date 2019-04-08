@@ -15,7 +15,19 @@ const addToFavorites = (req, res) => {
   res.status(200).json(favorites);
 };
 
+
+
+// DELETE
+const removeFavorites = (req, res) => {
+  let nameId = req.params.name;
+  favorites.splice(name, 1);
+  res.send(favorites);
+}
+
+
+
 module.exports = {
   addToFavorites,
-  readFavorites
+  readFavorites,
+  removeFavorites
 }

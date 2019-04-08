@@ -22,6 +22,11 @@ export default class ViewFavorites extends React.Component {
     })
   }
 
+  // removeFavorites = id => {
+  //   axios.delete("api/favorites/" + nameId);
+
+
+  // };
 
 
   render() {
@@ -32,6 +37,10 @@ export default class ViewFavorites extends React.Component {
           <p class="favorites-ticker">{favorite.ticker}</p>
           <img class="favorites-image" src={favorite.logo}>
           </img>
+          <button class="remove-button" onClick={() => {
+
+          }}
+          >Remove</button>
           <hr class="favorites-seperator" align="center" width="100%" />
         </div>
       ))

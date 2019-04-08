@@ -15,6 +15,9 @@ app.post("/api/favorites", addToFavorites);
 // UPDATE
 
 
+// DELETE
+app.delete("api/favorites/:id")
+
 const PORT = 4041;
 app.listen(PORT, () => {
   console.log(`Server running on ${PORT}`);
