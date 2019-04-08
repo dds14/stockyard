@@ -1,5 +1,4 @@
 .notes-box {
-    /* border: 1px solid rgb(181, 47, 47); */
     margin: 0;
     position: absolute;
     top: 50%;
@@ -12,6 +11,25 @@
     font-family: "Roboto", sans-serif;
     letter-spacing: 4px;
 
+}
+
+.edit-button {
+  border-radius: 45px;
+  background-color: rgb(181, 47, 47);
+  color: white;
+  font-size: 14px;
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.edit-input {
+    margin-top: 12px;
 }
 
 .notes-header {
@@ -37,7 +55,6 @@
     margin-top: 20px;
     padding-top: 20px;
     word-wrap: break-word;
-
 }
 
 .notes {
@@ -46,5 +63,4 @@
     padding-bottom: 10px;
     margin-top: 15px;
     border: 1px solid rgb(181, 47, 47);
-
 }

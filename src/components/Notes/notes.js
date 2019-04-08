@@ -63,10 +63,10 @@ export default class Notes extends React.Component {
                     <p onClick={() => this.toggleInput()}>{note.note}</p>
                     {showNote ?
                         <div>
-                            <input onChange={(event) => {
+                            <input class="edit-input" onChange={(event) => {
                                 this.editHandleChange(event.target.value)
                             }}></input>
-                            <button onClick={() => {
+                            <button class="edit-button" onClick={() => {
                                 this.changeNote(note.id)
                             }}>Edit</button>
                         </div> : null}
