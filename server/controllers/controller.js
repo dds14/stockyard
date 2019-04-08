@@ -37,6 +37,12 @@ const addToFavorites = (req, res) => {
 const updateNotes = (req, res) => {
   console.log(req.params)
   console.log(notes)
+  const index = notes.findIndex(note => {
+    return note.id === +req.params.id
+  })
+  console.log(index)
+  notes[index].note = req.body.newNote
+  res.status(200).json(notes)
 }
 
 
