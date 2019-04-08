@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 // import logo from './logo.svg';
 import "./App.css";
+import "./components/Notes/notes.css";
 import Info from "./components/Info/Info.js";
 import Notes from "./components/Notes/notes";
 import Financials from "./components/Financials (unused)/Financials";

@@ -22,7 +22,7 @@ export default class Notes extends React.Component {
     }
 
     handleChange(val) {
-        this.setState({ userInput: val })
+        this.setState({ userInput: "✍" + val })
     }
 
     editHandleChange(val) {
@@ -76,14 +76,14 @@ export default class Notes extends React.Component {
         })
         return (
             <div class='notes-box'>
-                <h3>Notes</h3>
-                <input onChange={(event) => {
+                <h3 class="notes-header">Notes</h3>
+                <input class="notes-input" onChange={(event) => {
                     this.handleChange(event.target.value)
                 }}></input>
-                <button onClick={() => {
+                <button class="notes-button" onClick={() => {
                     this.submitNote()
                 }}>Submit</button>
-                {viewNotes}
+                <p class="notes">{viewNotes}</p>
 
             </div>
         )
