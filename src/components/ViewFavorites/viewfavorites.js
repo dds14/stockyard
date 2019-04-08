@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import axios from "axios";
 import "./viewfavorites.css";
 
@@ -13,7 +12,7 @@ export default class ViewFavorites extends React.Component {
     }
   }
 
-  // runs when the 'view favorites' button is clicked
+  // runs when the 'submit' button is clicked
   componentDidMount() {
     axios.get("/api/favorites").then((res) => {
       this.setState({
@@ -22,11 +21,13 @@ export default class ViewFavorites extends React.Component {
     })
   }
 
-  // removeFavorites = id => {
-  //   axios.delete("api/favorites/" + nameId);
-
-
-  // };
+  removeFavorites = id => {
+    axios.delete("/api/favorites/" + id).then((res) => {
+      this.setState({
+        favorites: res.data
+      })
+    })
+  };
 
 
   render() {
@@ -38,7 +39,7 @@ export default class ViewFavorites extends React.Component {
           <img class="favorites-image" src={favorite.logo}>
           </img>
           <button class="remove-button" onClick={() => {
-
+            this.removeFavorites(favorite.name)
           }}
           >Remove</button>
           <hr class="favorites-seperator" align="center" width="100%" />

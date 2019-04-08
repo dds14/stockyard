@@ -2,6 +2,7 @@ import React, { Component } from "react";
 // import logo from './logo.svg';
 import "./App.css";
 import Info from "./components/Info/Info.js";
+import Notes from "./components/Notes/notes";
 import Financials from "./components/Financials (unused)/Financials";
 import FavoriteButtons from "./components/Info/AddToFavorites/FavoriteButtons";
 import Randomize from "./components/Info/Randomize/Randomize";
@@ -36,9 +37,13 @@ class App extends Component {
             {this.state.favs === "No" ? (
               <div>
                 <Info />
+                <Notes />
               </div>
             ) : this.state.favs === "Yes" ? (
-              <ViewFavorites />
+              <div>
+                <ViewFavorites />
+                <Notes />
+              </div>
             ) : (
                   <p>This is an error</p>
                 )}
