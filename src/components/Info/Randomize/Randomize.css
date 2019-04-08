@@ -19,3 +19,8 @@
     text-transform: uppercase;
     letter-spacing: 4px;
 }
+
+.randomize-button:hover {
+    background-color: #ffcdd2;
+    color: rgb(181, 47, 47);
+}

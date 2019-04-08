@@ -25,6 +25,11 @@
   letter-spacing: 4px;
 }
 
+.addtofavs-button:hover {
+  background-color: #ffcdd2;
+  color: rgb(181, 47, 47);
+}
+
 .viewfavs-button {
   border-radius: 45px;
   background-color: rgb(181, 47, 47);
@@ -39,3 +44,4 @@
   text-transform: uppercase;
   letter-spacing: 4px;
 }
+

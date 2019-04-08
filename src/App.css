@@ -39,3 +39,8 @@
   text-transform: uppercase;
   letter-spacing: 4px;
 }
+
+.view-favorites:hover {
+  background-color: #ffcdd2;
+  color: rgb(181, 47, 47);
+}

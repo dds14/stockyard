@@ -5,6 +5,7 @@
     font-family: "Roboto", sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
+    padding-bottom: 50px;
 }
 
 .favorites-image {
@@ -12,7 +13,6 @@
     height: 200px;
     padding-bottom: 30px;   
     margin: auto;
-
 }
 
 .favorites-name {
@@ -42,7 +42,12 @@
         font-family: "Roboto", sans-serif;
         text-transform: uppercase;
         letter-spacing: 4px;
-        width: 30%;
+        width: 100%;
         margin: auto;
       
+}
+
+.remove-button:hover {
+    background-color: #ffcdd2;
+    color: rgb(181, 47, 47);
 }
