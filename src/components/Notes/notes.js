@@ -25,7 +25,7 @@ export default class Notes extends React.Component {
     }
 
     editHandleChange(val) {
-        this.setState({ editHandleChange: val })
+        this.setState({ editHandleChange: "✍" + val })
     }
 
     submitNote() {
