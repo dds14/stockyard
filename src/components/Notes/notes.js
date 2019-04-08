@@ -8,11 +8,42 @@ export default class Notes extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            notes: []
+            notes: [],
+            userInput: "",
+            showNote: false,
+            editHandleChange: ""
         }
+
+        this.handleChange = this.handleChange.bind(this);
+        this.submitNote = this.submitNote.bind(this);
+        this.changeNote = this.changeNote.bind(this);
+        this.editHandleChange = this.editHandleChange.bind(this);
+        this.toggleInput = this.toggleInput.bind(this);
+
     }
 
-    // // runs when the 'view favorites' button is clicked
+    handleChange(val) {
+        this.setState({ userInput: val })
+    }
+
+    editHandleChange(val) {
+        this.setState({ editHandleChange: val })
+    }
+
+
+
+    submitNote() {
+        axios.post("/api/notes", { note: this.state.userInput })
+    }
+
+    changeNote(id) {
+        axios.put("/api/notes/" + id);
+    }
+
+    toggleInput() {
+        this.setState({ showNote: true })
+    }
+
     componentDidMount() {
         axios.get("/api/notes").then((res) => {
             this.setState({
@@ -22,12 +53,34 @@ export default class Notes extends React.Component {
     }
 
     render() {
+        const { notes, showNote } = this.state
+        const viewNotes = notes.map(note => {
+            return (
+                <div>
+                    <p onClick={() => this.toggleInput()}>{note.note}</p>
+                    {showNote ?
+                        <div>
+                            <input onChange={(event) => {
+                                this.editHandleChange(event.target.value)
+                            }}></input>
+                            <button onClick={() => {
+                                this.changeNote(note.id)
+                            }}>Edit</button>
+                        </div> : null}
+                </div>
+            )
+        })
         return (
             <div class='notes-box'>
                 <h3>Notes</h3>
-                <input></input>
-                <button>Submit</button>
-                <p>{this.state.notes}</p>
+                <input onChange={(event) => {
+                    this.handleChange(event.target.value)
+                }}></input>
+                <button onClick={() => {
+                    this.submitNote()
+                }}>Submit</button>
+                {viewNotes}
+
             </div>
         )
     }

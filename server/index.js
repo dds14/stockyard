@@ -2,7 +2,7 @@ const express = require("express"); // this is requiring express
 const app = express(); // this is invoking express
 
 const controller = require("./controllers/controller");
-const { addToFavorites, readFavorites, removeFavorites, addToNotes, readNotes } = require("./controllers/controller")
+const { addToFavorites, readFavorites, removeFavorites, addToNotes, readNotes, updateNotes } = require("./controllers/controller")
 
 app.use(express.json()); // this is middleware
 
@@ -11,7 +11,7 @@ app.use(express.json()); // this is middleware
 app.get("/api/favorites", controller.readFavorites);
 
 // READ (NOTES)
-app.post("/api/notes", readNotes)
+app.get("/api/notes", readNotes)
 
 // CREATE (NOTES)
 app.post("/api/notes", addToNotes);
@@ -21,7 +21,7 @@ app.post("/api/favorites", addToFavorites);
 
 
 // UPDATE
-
+app.put("/api/notes/:id", updateNotes);
 
 // DELETE
 app.delete("/api/favorites/:name", removeFavorites)

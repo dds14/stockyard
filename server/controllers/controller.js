@@ -14,9 +14,11 @@ const readNotes = (req, res) => {
 
 // CREATE (NOTES)
 const addToNotes = (req, res) => {
-  notes.push({
-    note: req.body
-  })
+  req.body.id = notes.length + 1
+  notes.push(
+    req.body
+  )
+
   res.status(200).json(notes)
 }
 
@@ -31,6 +33,15 @@ const addToFavorites = (req, res) => {
 };
 
 
+// UPDATE
+const updateNotes = (req, res) => {
+  console.log(req.params)
+  console.log(notes)
+}
+
+
+
+
 // DELETE
 const removeFavorites = (req, res) => {
   let name = req.params.name;
@@ -43,5 +54,8 @@ const removeFavorites = (req, res) => {
 module.exports = {
   addToFavorites,
   readFavorites,
-  removeFavorites
+  removeFavorites,
+  addToNotes,
+  readNotes,
+  updateNotes
 }
