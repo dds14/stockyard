@@ -19,7 +19,6 @@ export default class Notes extends React.Component {
         this.changeNote = this.changeNote.bind(this);
         this.editHandleChange = this.editHandleChange.bind(this);
         this.toggleInput = this.toggleInput.bind(this);
-
     }
 
     handleChange(val) {
