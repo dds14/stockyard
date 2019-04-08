@@ -3,7 +3,6 @@ import axios from "axios";
 import "./notes.css";
 
 
-
 export default class Notes extends React.Component {
     constructor(props) {
         super(props);

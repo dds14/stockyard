@@ -6,7 +6,6 @@ const { addToFavorites, readFavorites, removeFavorites, addToNotes, readNotes, u
 
 app.use(express.json()); // this is middleware
 
-
 // READ (FAVORITES)
 app.get("/api/favorites", controller.readFavorites);
 

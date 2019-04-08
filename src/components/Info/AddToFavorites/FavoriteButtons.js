@@ -10,7 +10,6 @@ export default class FavoriteButtons extends React.Component {
         <button onClick={this.props.addToFavorites} class="addtofavs-button">
           Add To Favorites
         </button>
-        {/* <button class="viewfavs-button">View Favorites</button> */}
       </div>
     );
   }

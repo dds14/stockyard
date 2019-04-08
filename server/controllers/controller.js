@@ -2,6 +2,7 @@ let favorites = [];
 
 let notes = [];
 
+
 // READ (FAVORITES)
 const readFavorites = (req, res) => {
   res.status(200).json(favorites);
@@ -32,21 +33,14 @@ const addToFavorites = (req, res) => {
   res.status(200).json(favorites);
 };
 
-
 // UPDATE
 const updateNotes = (req, res) => {
-  console.log(req.params)
-  console.log(notes)
   const index = notes.findIndex(note => {
     return note.id === +req.params.id
   })
-  console.log(index)
   notes[index].note = req.body.newNote
   res.status(200).json(notes)
 }
-
-
-
 
 // DELETE
 const removeFavorites = (req, res) => {
@@ -54,8 +48,6 @@ const removeFavorites = (req, res) => {
   favorites.splice(name, 1);
   res.send(favorites);
 }
-
-
 
 module.exports = {
   addToFavorites,

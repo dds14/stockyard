@@ -19,7 +19,7 @@ export default class Info extends React.Component {
     this.addToFavorites = this.addToFavorites.bind(this);
   }
 
-  /* This is just a function that generates a random number.
+  /* This is a function that generates a random number.
     It is then used to choose a random ID from the list of stocks. */
   randomize() {
     var randomStock = data[Math.floor(Math.random() * (data.length - 2))];
@@ -40,7 +40,6 @@ export default class Info extends React.Component {
       .catch(err => console.log('There was an error'));
 
   }
-
 
   render() {
     return (

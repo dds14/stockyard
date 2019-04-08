@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-// import logo from './logo.svg';
 import "./App.css";
 import "./components/Notes/notes.css";
 import Info from "./components/Info/Info.js";
@@ -17,7 +16,6 @@ class App extends Component {
     };
     this.showFavorites = this.showFavorites.bind(this);
   }
-
 
   showFavorites(favs) {
     this.setState({ favs: favs });
