@@ -29,18 +29,18 @@ export default class Notes extends React.Component {
         this.setState({ editHandleChange: val })
     }
 
-
-
     submitNote() {
         axios.post("/api/notes", { note: this.state.userInput }).then((res) => {
             this.setState({ notes: res.data })
         })
+            .catch(err => console.log('There was an error'));
     }
 
     changeNote(id) {
         axios.put("/api/notes/" + id, { newNote: this.state.editHandleChange }).then((res) => {
             this.setState({ notes: res.data })
         })
+            .catch(err => console.log('There was an error'));
     }
 
     toggleInput() {
@@ -53,6 +53,7 @@ export default class Notes extends React.Component {
                 notes: res.data
             })
         })
+            .catch(err => console.log('There was an error'));
     }
 
     render() {

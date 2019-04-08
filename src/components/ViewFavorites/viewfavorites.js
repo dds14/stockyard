@@ -19,6 +19,7 @@ export default class ViewFavorites extends React.Component {
         favorites: res.data
       })
     })
+      .catch(err => console.log('There was an error'));
   }
 
   removeFavorites = id => {
@@ -27,6 +28,7 @@ export default class ViewFavorites extends React.Component {
         favorites: res.data
       })
     })
+      .catch(err => console.log('There was an error'));
   };
 
 

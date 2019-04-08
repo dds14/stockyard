@@ -35,7 +35,9 @@ export default class Info extends React.Component {
     };
     axios.post("/api/favorites", favorites).then(response => {
       console.log(response.data);
-    });
+
+    })
+      .catch(err => console.log('There was an error'));
 
   }
 
