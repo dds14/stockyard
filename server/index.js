@@ -1,8 +1,6 @@
 const express = require("express"); // this is requiring express - think of require as importing
 const app = express(); // this is invoking express
 
-// const controller = require("./controllers/controller");
-
 // this part is used so you don't have to put controller. before every endpoint (i.e. app/get("api/favorites", readFavorites))
 const {
   addToFavorites,

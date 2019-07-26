@@ -17,6 +17,8 @@ class App extends Component {
     this.showFavorites = this.showFavorites.bind(this);
   }
 
+  // this function sets state for conditional rendering
+  // it's invoked inside when the view button is clicked
   showFavorites(favs) {
     this.setState({ favs: favs });
   }
@@ -44,8 +46,8 @@ class App extends Component {
                 <Notes />
               </div>
             ) : (
-                  <p>This is an error</p>
-                )}
+              <p>This is an error</p>
+            )}
           </p>
         </header>
       </div>

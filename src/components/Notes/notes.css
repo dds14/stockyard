@@ -1,16 +1,15 @@
 .notes-box {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    right: 85%;
-    width: 10vw;
-    height: 50vh;
-    padding-top: 100px;
-    font-family: "Roboto", sans-serif;
-    letter-spacing: 4px;
-
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 85%;
+  width: 10vw;
+  height: 50vh;
+  padding-top: 100px;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 4px;
 }
 
 .edit-button {
@@ -29,11 +28,11 @@
 }
 
 .edit-input {
-    margin-top: 12px;
+  margin-top: 12px;
 }
 
 .notes-header {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .notes-button {
@@ -52,36 +51,35 @@
 }
 
 .notes-button:hover {
-    background-color: #ffcdd2;
-    color: rgb(181, 47, 47);
+  background-color: #ffcdd2;
+  color: rgb(181, 47, 47);
 }
 
 .notes-button:focus {
-    outline:none;
+  outline: none;
 }
 
 .notes-input {
-    margin-top: 20px;
-    padding-top: 20px;
-    word-wrap: break-word;
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    border: 2px solid rgb(181, 47, 47);
-    background-color: #ffcdd2;
+  margin-top: 20px;
+  padding-top: 20px;
+  word-wrap: break-word;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  border: 2px solid rgb(181, 47, 47);
+  background-color: #ffcdd2;
 }
 
 .notes-input:focus {
-    outline:none;
-    background-color: white;
-    box-shadow: 3px 3px 5px #ffcdd2;
-
+  outline: none;
+  background-color: white;
+  box-shadow: 3px 3px 5px #ffcdd2;
 }
 
 .notes {
-    font-size: 16px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-top: 15px;
-    border: 1px solid rgb(181, 47, 47);
+  font-size: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 15px;
+  border: 1px solid rgb(181, 47, 47);
 }

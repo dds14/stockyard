@@ -33,12 +33,12 @@ export default class Info extends React.Component {
       name: data[this.state.randomId].companyName,
       ticker: data[this.state.randomId].ticker
     };
-    axios.post("/api/favorites", favorites).then(response => {
-      console.log(response.data);
-
-    })
-      .catch(err => console.log('There was an error'));
-
+    axios
+      .post("/api/favorites", favorites)
+      .then(response => {
+        console.log(response.data);
+      })
+      .catch(err => console.log("There was an error"));
   }
 
   render() {
